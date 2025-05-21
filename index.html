@@ -6,13 +6,12 @@
     <title>profile</title>
     <script src="https://kit.fontawesome.com/4e3712e9d5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav>
-        <div id = "logo">
-            <img src="./image/logo.png" alt="로고">
-        </div>
+    <nav class="nav_bar">
+        <img src="./image/logo.png" alt="로고">
        
-        <div id = "nav_menu">
+        <div class = "nav-menu">
             <ul>    
                 <li>Home</li>
                 <li>About</li>
@@ -22,212 +21,153 @@
             </ul>
         </div>
 
-        <div id = "nav_side_link">
-            <div><i class="fa-brands fa-github"></i></div>
-            <div><i class="fa-brands fa-linkedin"></i></div>
-            <div><i class="fa-brands fa-square-twitter"></i></div>
+        <div class = "nav-side-link">
+                <a href="">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                
+                <a href="">
+                    <i class="fa-brands fa-square-twitter"></i>
+                </a>
         </div>
-
     </nav>
     
-    <article id="first_article">
-        <div id = "first_article_word">
-            Hi, 제 이름은 토리예요 저는 웹 개발을 잘 해요!
+    <section class = "info-container">
+        <div class = "info-word">
+            <h1>Hi 👋, 
+            <br>
+            제 이름은 
+            <span>토리</span>예요!
+            <br>
+            저는 웹 개발을 잘 해요!</h1>
         </div>
         
-        <div>
-            <img src="./image/profile.png" alt="">
-        </div>
-    </article>
+        <img class="info-image" src="./image/profile.png" alt="">
+    </section>
 
         
-    <article id="tech-stack">
-        <div class="tech_stack_article_container">
-            <h3>My Tech Stack</h3>
-            제가 주로 사용하는 기술 스텍이에요.
+    <section class = "tech-stack-container">
+        <h2>My Tech Stack</h2>
+        제가 주로 사용하는 기술 스텍이에요.
+
+        <div class="tech-stack-images">
+            <img src="./image/html.png" alt="html">
+            <img src="./image/scss.png" alt="css">
+            <img src="./image/html.png" alt="js">
+            <img src="./image/react.png" alt="react">
+            <img src="./image/redux.png" alt="redux">
+            <img src="/image/bootstrap.png" alt="bootstarp">
+            <img src="./image/wave.png" alt="wave">
+            <img src="/image/scss.png" alt="scss image">
+            <img src="./image/git.png" alt="git">
+            <img src="./image/springbootpng.png" alt="springboot">
+            <img src="./image/vsc.png" alt="vsc">
+            <img src="./image/github.png" alt="github">
         </div>
+    </section>
 
-        <div class="tech_stack_img_container">
-            <div id = "html_img">
-                <img src="./image/html.png" alt="">
-            </div>
+    <section class ="projects-container">
+        <h2>Projects</h2>
+        <p>
+            제가 진행한 프로젝트 들이에요.
+        </p>
 
-            <div id = "css_img">
-                <img src="./image/scss.png" alt="css_img">
-            </div>
-
-            <div id = "js_img">
-                <img src="./image/html.png" alt="자바스크립트 이미지">
-            </div>
-
-            <div id = "react_img">
-                <img src="./image/react.png" alt="리액트이미지">
-            </div>
-
-            <div id = "idontkwon_img">
-                <img src="./image/idontknow.png" alt="이거뭔지모르곘음이미지">
-            </div>
-
-            <div id = "idontknow2_img">
-                <img src="/image/idontknow.png" alt="이것도 뭔지 모르겠음">
-            </div>
-
-            <div id = "wave_img">
-                <img src="./image/wave.png" alt="웨이브이미지">
-            </div>
-
-            <div id = "scss_img">
-                <img src="/image/scss.png" alt="scss image">
-            </div>
-
-            <div>
-                <img src="./image/git.png" alt="git">
-            </div>
-            
-            <div>
-                <img src="./image/git.png" alt="남자이미지">
-            </div>
-
-            <div>
-                <img src="./image/vsc.png" alt="vsc사진">
-            </div>
-
-            <div>
-                <img src="./image/github.png" alt="깃허브사진">
-            </div>
-        </div>
-    </article>
-
-    <article id="projects">
-        <div class="projects_info_container">
-            <h3>Projects</h3>
-            <p>
-                제가 진행한 프로젝트 들이에요.
-            </p>
-        </div>
-
-        <div class="projects_container">
-            <div>
-                <img src="./image/proejct_img.png" alt="">
-                
+        <div class="projects-card-container">
+            <img src="./image/proejct_img.png" alt="">
+            <div class = "link_container">
                 <div>
-                    <div class = "link_container">
-                        <div>
-                            <i class="fa-solid fa-link"></i>
-                            <a href="">Live Preview</a>
-                        </div>                        
-                        <div>
-                            <i class="fa-brands fa-github"></i>
-                            <a href="">View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <img src="./image/proejct_img.png" alt="">
-                <div class="project_info_container">
-                    <div class = "link_container">
-                        <div>
-                            <i class="fa-solid fa-link"></i>
-                            <a href="">Live Preview</a>
-                        </div>
-
-                        <div>
-                            <i class="fa-brands fa-github"></i>
-                            <a href="">View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <img src="./image/proejct_img.png" alt="">
-                <div class="project_info_container">
-                    <div class = "link_container">
-                        <div>
-                            <i class="fa-solid fa-link"></i>
-                            <a href="">Live Preview</a>
-                        </div>
-                        
-                         <div>
-                            <i class="fa-brands fa-github"></i>
-                            <a href="">View Code</a>
-                        </div>
-                    </div>       
-                </div>
-            </div>
-            
-            <div>
-                <img src="./image/proejct_img.png" alt="">
-                <div class="project_info_container">
-                    <div class = "link_container">
-                        <div>
-                            <i class="fa-solid fa-link"></i>
-                            <a href="">Live Preview</a>
-                        </div> 
-
-                         <div>
-                            <i class="fa-brands fa-github"></i>
-                            <a href="">View Code</a>
-                        </div>
-                        
-                    </div>   
-                </div>
-            </div>
-            
-            <div>
-                <img src="./image/proejct_img.png" alt="">
-                <div class="project_info_container">
-                    <div class = "link_container">
-                        <div>
-                            <i class="fa-solid fa-link"></i>
-                            <a href="">Live Preview</a>
-                        </div>
-
-                        <div>
-                            <i class="fa-brands fa-github"></i>
-                            <a href="">View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <img src="./image/proejct_img.png" alt="">
-                <div class="project_info_container">
-
-                    
-                    <div class = "link_container">
-                        <div>
-                            <i class="fa-solid fa-link"></i>
-                            <a href="">Live Preview</a>
-                        </div> 
-
-                         <div>
-                            <i class="fa-brands fa-github"></i>
-                            <a href="">View Code</a>
-                        </div>
-                    </div>   
+                    <i class="fa-solid fa-link"></i>
+                    <a href="">Live Preview</a>
+                </div>                        
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="">View Code</a>
                 </div>
             </div>
         </div>
-    </article>
 
-    <footer>
-        <div></div>
+                <div class="projects-card-container">
+            <img src="./image/proejct_img.png" alt="">
+            <div class = "link_container">
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <a href="">Live Preview</a>
+                </div>                        
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="">View Code</a>
+                </div>
+            </div>
+        </div>
 
-        <div>
-            <div></div>
-            <div></div>
+                <div class="projects-card-container">
+            <img src="./image/proejct_img.png" alt="">
+            <div class = "link_container">
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <a href="">Live Preview</a>
+                </div>                        
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="">View Code</a>
+                </div>
+            </div>
         </div>
-        
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
+
+                <div class="projects-card-container">
+            <img src="./image/proejct_img.png" alt="">
+            <div class = "link_container">
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <a href="">Live Preview</a>
+                </div>                        
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="">View Code</a>
+                </div>
+            </div>
         </div>
-        
+
+                <div class="projects-card-container">
+            <img src="./image/proejct_img.png" alt="">
+            <div class = "link_container">
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <a href="">Live Preview</a>
+                </div>                        
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="">View Code</a>
+                </div>
+            </div>
+        </div>
+
+                <div class="projects-card-container">
+            <img src="./image/proejct_img.png" alt="">
+            <div class = "link_container">
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <a href="">Live Preview</a>
+                </div>                        
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="">View Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+        </div>
+
+        <div class="footer-info">
+            Designed and built by Pavan MG with Love & Coffee
+        </div>
     </footer>
 </body>
 </html>
