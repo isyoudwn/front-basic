@@ -1,0 +1,353 @@
+/* html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 1230px;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.nav-bar {
+    position: absolute;
+    background-color: rgb(22, 45, 255);
+    height:59px;
+    width: 1230px;
+}
+
+.nav-bar>img {
+    width: 97px;
+    height:59px;
+}
+
+.nav-bar ul {
+  position: static;
+  left: 310px;
+  top: 0px;
+  display: flex;
+  gap: 50px;
+  list-style: none;     
+  margin: 0;
+  padding: 0px;
+  width: 577px;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-bar li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-side-link {
+  left : 0px;
+  width: 130px;
+  height: 29.26px;
+}
+ */
+
+
+ /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- NavBar --- */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-bar img {
+    width: 120px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-bar li {
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-bar li:hover {
+    color: #007bff;
+}
+
+.nav-side-link a {
+    margin-left: 15px;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-side-link a:hover {
+    color: #007bff;
+}
+
+/* --- Info Section --- */
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 0;
+    flex-wrap: wrap;
+}
+
+.info-word h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e1e1e;
+}
+
+.info-word span {
+    color: #007bff;
+}
+
+.info-image {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Tech Stack --- */
+.tech-stack-container {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.tech-stack-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #1e1e1e;
+}
+
+.tech-stack-container p {
+    margin-bottom: 20px;
+}
+
+.tech-stack-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.tech-stack-images img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.tech-stack-images img:hover {
+    transform: scale(1.1);
+}
+
+/* --- Projects Section --- */
+.projects-container {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.projects-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.projects-container p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.projects-card-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s;
+}
+
+.projects-card-container:hover {
+    transform: translateY(-5px);
+}
+
+.projects-card-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.link_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link_container div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.link_container a {
+    text-decoration: none;
+    color: #007bff;
+    transition: text-decoration 0.3s;
+}
+
+.link_container a:hover {
+    text-decoration: underline;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #888;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    margin-bottom: 10px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .projects-card-container {
+        padding: 15px;
+    }
+}
+
+/* --- Projects Section Grid 설정 --- */
+.projects-container {
+    margin: 60px 0;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+/* 제목과 설명은 3열 전체 사용 */
+.projects-container > h2,
+.projects-container > p {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+    color: #1e1e1e;
+}
+
+/* 개별 프로젝트 카드 */
+.projects-card-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    transition: transform 0.3s;
+    width: 100%;
+    max-width: 350px;
+}
+
+.projects-card-container:hover {
+    transform: translateY(-5px);
+}
+
+.projects-card-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.link_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link_container div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.link_container a {
+    text-decoration: none;
+    color: #007bff;
+    transition: text-decoration 0.3s;
+}
+
+.link_container a:hover {
+    text-decoration: underline;
+}
+
+/* --- 반응형 --- */
+@media (max-width: 1024px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
