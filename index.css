@@ -95,18 +95,21 @@ body {
   max-width: 300px;
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Tech Stack --- */
 .tech-stack-container {
-  margin: 60px 0;
+  margin: 80px 0;
   text-align: center;
 }
 
 .tech-stack-container h2 {
-  font-size: 2rem;
+  font-size: 2rem;`
   margin-bottom: 10px;
+}
+
+.tech-stack-info {
+  margin-bottom: 30px;
 }
 
 .tech-stack-container p {
@@ -158,9 +161,16 @@ body {
 
 .projects-card-container img {
   width: 100%;
-  max-width: 240px;
-  border-radius: 15px;
-  margin-bottom: 15px;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.projects-card-container p {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin-bottom: 25px;
 }
 
 .link_container {
@@ -170,7 +180,7 @@ body {
 }
 
 .link_container a {
-  color: #007bff;
+  color: black;
   text-decoration: none;
   font-weight: 600;
   margin-left: 5px;
@@ -180,7 +190,7 @@ body {
   color: #2c3e50;
 }
 
-/* --- Footer --- */
+/* --- footer --- */
 .footer {
   margin-top: 60px;
   padding: 30px 0 10px 0;
@@ -190,20 +200,24 @@ body {
   border-top: 1px solid #eee;
 }
 
-/* --- Responsive Design --- */
+
+/* -- 반응형 -- */
 @media (max-width: 900px) {
   .wrapper {
     padding: 10px;
   }
+  
   .info-container {
     flex-direction: column;
-    align-items: center;   /* 👈 중앙 정렬로 수정 */
-    text-align: center;    /* 👈 텍스트도 중앙 정렬 */
+    align-items: center;
+    text-align: center;
     gap: 20px;
   }
+
   .info-image {
     max-width: 220px;
   }
+
   .nav-bar ul {
     gap: 20px;
   }
@@ -216,9 +230,11 @@ body {
     gap: 10px;
     padding: 10px 0;
   }
+
   .nav-bar img {
     width: 90px;
   }
+
   .nav-bar ul {
     flex-direction: column;
     gap: 10px;
@@ -226,30 +242,41 @@ body {
     align-items: flex-start;
     margin: 0;
   }
+
   .nav-side-link {
     margin-top: 10px;
   }
+
   .info-word h1 {
     font-size: 1.5rem;
   }
+
   .info-container {
     flex-direction: column;
-    align-items: center;   /* 👈 중앙 정렬 유지 */
-    text-align: center;    /* 👈 텍스트도 중앙 정렬 */
+    align-items: center;
+    text-align: center;
   }
+
   .tech-stack-images img {
     width: 45px;
     height: 45px;
   }
+  
   .projects-card-container img {
     max-width: 100%;
     height: auto;
   }
+
   .projects-container {
     gap: 15px;
   }
+
   .footer {
     font-size: 0.9rem;
     padding: 20px 0 5px 0;
   }
+}
+
+.footer>hr {
+  margin-bottom: 20px;
 }
